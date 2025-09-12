@@ -1,0 +1,32 @@
+@import 'styles.css';
+
+/* Local variables */
+:root {
+    --thumbnailDimensions: 250px; /* we use px beacuse its an image */
+    --colorBgCategory: #7F4F24
+}
+
+article {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 0.5rem;
+    align-items: center;
+
+    img {
+        width: var(--thumbnailDimensions);
+        height: var(--thumbnailDimensions);
+    }
+    .recipe-attribute {
+        padding: 0 1rem;
+        border-radius: 1rem;
+        color: var(--colorBgComplementary);
+        
+        &.recipe-area {
+            background-color: var(--colorBgNav);
+        }
+
+        &.recipe-category {
+            background-color: var(--colorBgCategory);
+        }
+    }
+}
