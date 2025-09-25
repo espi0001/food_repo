@@ -8,6 +8,8 @@
 
 body {
     font-family: var(--fontMain);
+    max-width: var(--maxWith);
+    margin: 0 auto; /* to make it centeret */
 
     /* the first header of the body + the first footer of the body */
     >header,

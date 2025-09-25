@@ -1,7 +1,7 @@
 import { BASE_URL } from './info.js'; // calling the BASE_URL from info.js
 
 fetch(`${BASE_URL}/random.php`) // Could også use: fetch(BASE_URL + '/random.php')
-.then(response => response.json()) // The resonse has the json method that returns it into json
+.then(response => response.json()) // The response has the json method that returns it into json
 .then(data => {
     data = data.meals[0]; // so we dont need to write so much code
     console.log(data);

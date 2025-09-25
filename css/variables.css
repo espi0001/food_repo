@@ -7,4 +7,6 @@
     /* --colorBgCategory: #7F4F24  */ /* only used in recipes.css */
     --fontTitle: 'Lexend Exa', sans-serif;
     --fontMain: 'Poppins', sans-serif;
+
+    --maxWith: 1024px;
 }
