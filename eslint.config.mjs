@@ -24,7 +24,7 @@ export default [...compat.extends('eslint:recommended'), {
 
     // These are only some of the most useful ESLint rules
     rules: {
-        // 'linebreak-style': ['error', 'windows'],    // Forces Windows line breaks (ASCII 13 + 10) over Linux line breaks (ASCII 13)
+        'linebreak-style': ['error', 'windows'],    // Forces Windows line breaks (ASCII 13 + 10) over Linux line breaks (ASCII 13)
         semi: ['error', 'always'],                  // Forces the use of a semicolon at the end of each statement
         strict: ['error', 'global'],                // Forces the use of 'use strict';
         'no-var': 'error',                          // Prevents declaring variables with var

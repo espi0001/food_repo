@@ -6,6 +6,7 @@ Javascript / CSS3 / HTML5
 
 ## Author
 EK Web Development
+Ester Piazza-Koldbye
 
 
 

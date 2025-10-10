@@ -7,13 +7,12 @@
 }
 
 body {
-    font-family: var(--fontMain);
     max-width: var(--maxWith);
     margin: 0 auto; /* to make it centeret */
+    font-family: var(--fontMain);
 
     /* the first header of the body + the first footer of the body */
-    >header,
-    >footer {
+    > header, > footer {
         padding: 0.5rem 1rem;
         text-align: center;
         color: var(--colorBgComplementary);
@@ -39,7 +38,7 @@ body {
                 font-weight: bold;
                 text-decoration: none;
                 color: var(--colorBgComplementary);
-
+                
             }
         }
     }
@@ -47,10 +46,18 @@ body {
     main {
         padding: 0.5rem 1rem;
     }
+
+    a {
+        text-decoration: none;
+        font-weight: bold;
+        color: var(--colorBgMain);
+    }
 }
 
-  button {
-      color: var(--colorBgComplementary);
-      background-color: var(--colorBgMain);
-      border: none;
-  }
+/* not nested because we use a button in the dialog */
+button {
+    color: var(--colorBgComplementary);
+    background-color: var(--colorBgMain);
+    border: none;
+    cursor: pointer;
+}
