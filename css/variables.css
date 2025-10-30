@@ -4,7 +4,8 @@
     --colorBgMain: #414833;
     --colorBgComplementary: floralwhite;
     --colorBgNav: #656D4A;
-    /* --colorBgCategory: #7F4F24  */ /* only used in recipes.css */
+    --colorBgCategory: #7F4F24;
+    
     --fontTitle: 'Lexend Exa', sans-serif;
     --fontMain: 'Poppins', sans-serif;
 

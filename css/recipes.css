@@ -3,7 +3,6 @@
 /* Local variables */
 :root {
     --thumbnailDimension: 200px; /* we use px beacuse its an image */
-    --colorBgCategory: #7F4F24
 }
 #recipes-list {
     display: grid;
@@ -13,6 +12,7 @@
 
     header {
         grid-column: 1 / -1;
+        text-align: center;
     }
     article {
         display: flex;
@@ -24,19 +24,6 @@
             width: var(--thumbnailDimension);
             height: var(--thumbnailDimension);
             border-radius: 1rem;
-        }
-        .recipe-attribute {
-            padding: 0 1rem;
-            border-radius: 1rem;
-            color: var(--colorBgComplementary);
-            
-            &.recipe-area {
-                background-color: var(--colorBgNav);
-            }
-    
-            &.recipe-category {
-                background-color: var(--colorBgCategory);
-            }
         }
     }
 }

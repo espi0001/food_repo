@@ -2,6 +2,11 @@ import { BASE_URL } from './info.js'; // calling the BASE_URL from info.js
 
 const MAX_RECIPIES = 8;
 
+const assignLink = (anchor, url, text) => {
+    anchor.href = url;
+    anchor.title = text;
+};
+
 // we create a fragment
 const fragment = document.createDocumentFragment();
 
@@ -17,7 +22,18 @@ for (let index = 0; index < MAX_RECIPIES; index++) {
 
         const mealCard = document.querySelector('#recipe-card').content.cloneNode(true);
 
-        mealCard.querySelector('h3').innerText = data.strMeal;
+        const linkURL = `recipe.htm?id=${data.idMeal}`;
+
+        const headerLink = mealCard.querySelector('h3 > a');
+        headerLink.innerText = data.strMeal;
+        assignLink(headerLink, linkURL, data.strMeal)
+        // headerLink.href = `recipe.htm?id=${data.idMeal}`;
+        // headerLink.taget = data.strMeal;
+
+        const pictureLink = mealCard.querySelector('a:has(img)');
+        assignLink(pictureLink, linkURL, data.strMeal)
+        // pictureLink.href = `recipe.htm?id=${data.idMeal}`;
+        // pictureLink.taget = data.strMeal;
 
         const thumbnail = mealCard.querySelector('img');
         thumbnail.setAttribute('src', data.strMealThumb);

@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+img {
+    width: 100%;
+}
+
 body {
     max-width: var(--maxWith);
     margin: 0 auto; /* to make it centeret */
@@ -60,4 +64,21 @@ button {
     background-color: var(--colorBgMain);
     border: none;
     cursor: pointer;
+}
+
+.recipe-attribute {
+    display: inline-block;
+    width: auto;
+    
+    padding: 0 1rem;
+    border-radius: 1rem;
+    color: var(--colorBgComplementary);
+
+    &.recipe-area {
+        background-color: var(--colorBgNav);
+    }
+
+    &.recipe-category {
+        background-color: var(--colorBgCategory);
+    }
 }
