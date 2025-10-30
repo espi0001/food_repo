@@ -1,11 +1,6 @@
 import { USERS_BASE_URL } from './info.js';
 
-const showModal = (header, text) => {
-    const modal = document.querySelector('#mdlInfo');
-    modal.querySelector('h1').innerText = header;
-    modal.querySelector('p').innerText = text;
-    modal.showModal();
-};
+import { showModal } from './modal.js';
 
 document.querySelector('#frmSignup').addEventListener('submit', (e) => {
     e.preventDefault();
