@@ -25,6 +25,22 @@ body {
 
     > header {
         font-family: var(--fontTitle);
+
+        nav {
+            display: inline-block;
+            width: auto;
+            padding: 0.25rem 1rem;
+            margin-top: 0.5rem;
+            border-radius: 1rem;
+            font-family: var(--fontMain);
+
+            button {
+                background-color: var(--colorBgNav);
+                font-family: var(--fontMain);
+                font-size: 1rem;
+                font-weight: bold;
+            }
+        }
     }
     
     nav {
@@ -69,7 +85,7 @@ button {
 .recipe-attribute {
     display: inline-block;
     width: auto;
-    
+
     padding: 0 1rem;
     border-radius: 1rem;
     color: var(--colorBgComplementary);
@@ -81,4 +97,8 @@ button {
     &.recipe-category {
         background-color: var(--colorBgCategory);
     }
+}
+
+.hidden {
+    display: none;
 }

@@ -7,11 +7,21 @@
     <title>Home | Food Repo</title>
     <link rel="stylesheet" href="css/recipes.css">
     <script src="js/recipes.js" type="module"></script>
+    <script src="js/loginCheck.js" type="module"></script>
+    <script src="js/logout.js" type="module"></script>
 </head>
 
 <body>
     <header>
         <h1>Food Repo</h1>
+        <p id="user"></p>
+        
+        <nav>
+            <ul>
+                <li id="login"><a href="login.htm" title="Login">Login</a></li>
+                <li id="logout" class="hidden"><button id="btnLogout">Logout</button></li>
+            </ul>
+        </nav>
     </header>
     <nav>
         <ul>

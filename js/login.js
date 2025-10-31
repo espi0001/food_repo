@@ -1,6 +1,6 @@
 import { USERS_BASE_URL } from './info.js';
-
 import { showModal } from './modal.js';
+import { SESSION_STORAGE_USER_EMAIL } from "./info.js";
 
 document.querySelector('#frmLogin').addEventListener('submit', (e) => {
     e.preventDefault();
@@ -17,7 +17,7 @@ document.querySelector('#frmLogin').addEventListener('submit', (e) => {
         data.forEach(user => {
             if (!found) {
                 if (user.email === email && user.password === password) {
-                    sessionStorage.setItem('foodrepo-loggedinuser-email', email);
+                    sessionStorage.setItem(SESSION_STORAGE_USER_EMAIL, email);
                     location.href = 'index.html';
                     
                     found = true
@@ -25,7 +25,7 @@ document.querySelector('#frmLogin').addEventListener('submit', (e) => {
             }
         });
         if (!found) {
-            showModal('Validation error', 'Incorrect credentials.')
+            showModal('Validation error', 'Incorrect credentials.');
         }
     })
     .catch(error => console.log(error));
